@@ -1,0 +1,40 @@
+body {
+    background-color: #87CEEB; /* Color de fondo azul cielo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+    text-align: center;
+    padding: 0.5em;
+    background-color: #e6789e; /* Color de fondo rojo */
+    transition: background-color 0.5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar el texto en el medio de la pantalla */
+    animation: animacion-h1 2s ease-in-out; /* Agregar la animación al h1 */
+  }
+  
+  h1:hover {
+    background-color: rgb(205, 160, 244); /* Color de fondo blanco al pasar el cursor sobre el h1 */
+  }
+
+  @keyframes animacion-h1 {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
